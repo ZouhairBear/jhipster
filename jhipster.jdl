@@ -1,0 +1,46 @@
+
+
+entity UserExtra {
+  country String,
+  coverPictureUrl String,
+  facebookLink String,
+  instagramLink String,
+  twitterLink String,
+  websiteLink String,
+  zipCode String,
+  birthdate LocalDate,
+  gender Gender,
+  phoneNumber String,
+  twoFactorEnabled Boolean,
+  secretCode String
+}
+enum Gender {
+MALE, FEMELE
+}
+entity Produit {
+  name String,
+  price Integer
+}
+
+entity Category {
+  name String
+}
+
+entity BankAccount {
+  rib String
+}
+
+relationship OneToOne {
+  UserExtra{user(login)} to User
+  UserExtra{bankAccount} to BankAccount{userExtra}
+}
+relationship OneToMany {
+  Category{produit} to Produit{category}
+  
+}
+
+relationship ManyToMany {
+  Produit{userExtra} to UserExtra{produit}
+}
+
+service Category, Produit, UserExtra, BankAccount with serviceClass

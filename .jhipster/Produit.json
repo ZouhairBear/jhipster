@@ -1,0 +1,38 @@
+{
+  "applications": "*",
+  "changelogDate": "20230704112835",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "produit",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "price",
+      "fieldType": "Integer"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Produit",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "userExtra",
+      "otherEntityRelationshipName": "produit",
+      "ownerSide": true,
+      "relationshipName": "userExtra",
+      "relationshipType": "many-to-many"
+    },
+    {
+      "otherEntityName": "category",
+      "otherEntityRelationshipName": "produit",
+      "relationshipName": "category",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "serviceClass"
+}

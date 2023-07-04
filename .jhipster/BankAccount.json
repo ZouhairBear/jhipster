@@ -1,0 +1,28 @@
+{
+  "applications": "*",
+  "changelogDate": "20230704112837",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "bank_account",
+  "fields": [
+    {
+      "fieldName": "rib",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "BankAccount",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "userExtra",
+      "otherEntityRelationshipName": "bankAccount",
+      "ownerSide": false,
+      "relationshipName": "userExtra",
+      "relationshipType": "one-to-one"
+    }
+  ],
+  "service": "serviceClass"
+}

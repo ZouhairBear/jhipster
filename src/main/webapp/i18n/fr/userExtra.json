@@ -1,0 +1,38 @@
+{
+  "jhipsterApp": {
+    "userExtra": {
+      "home": {
+        "title": "UserExtras",
+        "refreshListLabel": "Actualiser la liste",
+        "createLabel": "Créer un nouveau User Extra",
+        "createOrEditLabel": "Créer ou éditer un User Extra",
+        "notFound": "Aucun User Extra trouvé"
+      },
+      "created": "Un nouveau User Extra a été créé avec l'identifiant {{ param }}",
+      "updated": "Le User Extra avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le User Extra avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Êtes-vous certain de vouloir supprimer le User Extra {{ id }} ?"
+      },
+      "detail": {
+        "title": "User Extra"
+      },
+      "id": "ID",
+      "country": "Country",
+      "coverPictureUrl": "Cover Picture Url",
+      "facebookLink": "Facebook Link",
+      "instagramLink": "Instagram Link",
+      "twitterLink": "Twitter Link",
+      "websiteLink": "Website Link",
+      "zipCode": "Zip Code",
+      "birthdate": "Birthdate",
+      "gender": "Gender",
+      "phoneNumber": "Phone Number",
+      "twoFactorEnabled": "Two Factor Enabled",
+      "secretCode": "Secret Code",
+      "user": "User",
+      "bankAccount": "Bank Account",
+      "produit": "Produit"
+    }
+  }
+}
